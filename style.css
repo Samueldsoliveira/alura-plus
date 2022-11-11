@@ -55,6 +55,16 @@ body{
     color: var(--branco-principal);
     display: block;
     margin-bottom: 1em;
+    
+}
+
+.container__botao:hover{
+    transform: scale(1.1);
+    transition: transform 0.3s;
+}
+
+.container__botao:active{
+    transform: scale(1.2);
 }
 
 .botao_sencundario{
@@ -94,6 +104,11 @@ body{
     margin-top: 1em;
 }
 
+.secundario img:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
 .container__descricao{
     padding: 2em;
 }
@@ -118,4 +133,75 @@ body{
     font-size: 32px;
     font-weight: 700;
     color: var(--branco-principal);
+}
+
+.rodape{
+    text-align: center;
+    margin: 6em 4em;
+}
+
+.rodape__lista{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+}
+
+.dispositivos__lista li:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.lista__link a{
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--branco-principal);
+    padding: 0.3em;
+    text-decoration: none;
+}
+
+.rodape__texto{
+    margin: 1em 0;
+    font: 14px;
+    font-weight: 400;
+    color: var(--cinza-secundario);
+}
+
+.box__texto{
+    margin-top: 2em;
+}
+
+.lista__link a:hover{
+    color: var(--botao-azul);
+}
+
+@media screen and (max-width: 480px) {
+    *{
+        margin: -47px;
+        padding: 0;
+    }
+    .container{
+        grid-template-columns: 100%;
+    }
+
+    .container__titulo{
+        font-size: 28px;
+        font-weight: 700;
+        margin: 127px 41px 18px -10px;
+        margin: 127px 41px -65px -10px;
+    }
+    
+    .principal{
+        background-position-x: -234px;
+        background-position-y: 87px;
+        width: 155%;
+    }
+
+    .container__caixa{
+        margin: 131px 40px 0px 0px;
+    }
+    
+    .container__imagem{
+        margin: 1em 53px 4em 0px;
+    }
 }
